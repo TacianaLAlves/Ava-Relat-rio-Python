@@ -20,7 +20,7 @@ execute:
   message: false
 reference-location: margin
 citation-location: margin
-#bibliography: references.bib
+bibliography: Referencia.bib
 self-contained-math: true
 embed-resources: true
 ---
@@ -268,3 +268,5 @@ Por fim, revisamos os conceitos básicos de Python, desde tipos de dados e estru
 Dominar essas ferramentas e conceitos é um passo importante para qualquer desenvolvedor, pois proporciona uma base sólida para projetos mais complexos e colaborativos. A prática contínua e a exploração de recursos adicionais serão essenciais para aprofundar o conhecimento e aplicar essas habilidades em cenários reais.
 
 Em resumo, Git, pip e Python formam um ecossistema poderoso para desenvolvimento de software, e seu domínio abre portas para a criação de soluções robustas e inovadoras.
+
+### Referências

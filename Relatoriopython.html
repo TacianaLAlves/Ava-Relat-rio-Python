@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Professora Doutora Ana Hermínia Andrade e Silva">
+<meta name="author" content="Taciana de Luna Alves">
 
-<title>1108190 - Análise Exploratória de Dados</title>
+<title>INTRODUÇÃO AOS SOFTWARES ESTATÍSTICOS</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -2341,16 +2341,25 @@ vertical-align: -.125em;
   </script>
 
 <div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
-<div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-  
+<div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+  <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Índice</h2>
+   
+  <ul>
+  <li><a href="#git-e-github" id="toc-git-e-github" class="nav-link active" data-scroll-target="#git-e-github"><strong>Git e GitHub</strong></a></li>
+  <li><a href="#pip-gerenciador-de-pacotes-do-python" id="toc-pip-gerenciador-de-pacotes-do-python" class="nav-link" data-scroll-target="#pip-gerenciador-de-pacotes-do-python"><strong>PIP: Gerenciador de Pacotes do Python</strong></a></li>
+  <li><a href="#conceitos-iniciais-de-python" id="toc-conceitos-iniciais-de-python" class="nav-link" data-scroll-target="#conceitos-iniciais-de-python"><strong>Conceitos Iniciais de Python</strong></a></li>
+  <li><a href="#conclusão" id="toc-conclusão" class="nav-link" data-scroll-target="#conclusão"><strong>Conclusão</strong></a></li>
+  </ul>
+</nav>
 </div>
 <main class="content" id="quarto-document-content">
 
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<div class="quarto-title-block"><div><h1 class="title">1108190 - Análise Exploratória de Dados</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Código</button></div></div>
-<p class="subtitle lead">Apresentação e Motivação</p>
+<div class="quarto-title-block"><div><h1 class="title">INTRODUÇÃO AOS SOFTWARES ESTATÍSTICOS</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Código</button></div></div>
+<p class="subtitle lead">Relatório em Quarto + GitHub</p>
 </div>
 
 
@@ -2360,7 +2369,7 @@ vertical-align: -.125em;
     <div>
     <div class="quarto-title-meta-heading">Autor</div>
     <div class="quarto-title-meta-contents">
-             <p>Professora Doutora Ana Hermínia Andrade e Silva </p>
+             <p>Taciana de Luna Alves </p>
           </div>
   </div>
     
@@ -2379,8 +2388,311 @@ vertical-align: -.125em;
 </header>
 
 
+<section id="git-e-github" class="level3">
+<h3 class="anchored" data-anchor-id="git-e-github"><strong>Git e GitHub</strong></h3>
+<section id="o-que-são" class="level4">
+<h4 class="anchored" data-anchor-id="o-que-são"><strong>1. O que são?</strong></h4>
+<ul>
+<li><p><strong>Git</strong>: É um sistema de controle de versão distribuído usado para rastrear alterações em arquivos de código-fonte durante o desenvolvimento de software. Foi criado por Linus Torvalds em 2005.</p></li>
+<li><p><strong>GitHub</strong>: É uma plataforma de hospedagem baseada em nuvem que utiliza o Git para versionamento. Ela permite que desenvolvedores colaborem em projetos, armazenem repositórios e gerenciem workflows.</p></li>
+</ul>
+</section>
+<section id="para-que-servem" class="level4">
+<h4 class="anchored" data-anchor-id="para-que-servem"><strong>2. Para que servem?</strong></h4>
+<ul>
+<li><p><strong>Git</strong>: é um sistema de controle de versão que acompanha as alterações nos arquivos de forma inteligente. O Git é particularmente útil quando você e um grupo de pessoas fazem alterações nos mesmos arquivos ao mesmo tempo.</p>
+<p>Normalmente, para fazer isso em um fluxo de trabalho baseado no Git, você deve:</p>
+<ul>
+<li><p>Controla o histórico de alterações em projetos.</p></li>
+<li><p>Facilita o trabalho em equipe (mesclando mudanças de diferentes colaboradores).</p></li>
+<li><p>Permite reverter para versões anteriores em caso de erros.</p></li>
+</ul></li>
+<li><p><strong>GitHub</strong>: O GitHub é uma plataforma baseada em nuvem em que é possível armazenar, compartilhar e trabalhar com outras pessoas para escrever códigos.</p>
+<p>O seguinte é possível ao armazenar códigos em um “repositório” no GitHub:</p>
+<ul>
+<li><p>Hospeda repositórios Git remotamente.</p></li>
+<li><p>Permite que outras pessoas revisem o seu código e deem sugestões para melhorá-lo.</p></li>
+<li><p>Oferece ferramentas adicionais como <em>issues</em>, <em>pull requests</em> e integração contínua (CI/CD).</p></li>
+<li><p>Funciona como uma rede social para desenvolvedores (compartilhamento de projetos <em>open source</em>).</p>
+<p>O trabalho colaborativo, uma das características fundamentais do GitHub, é possível graças ao software de código aberto Git, que serviu como base para a criação do GitHub.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 100%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;"><p><strong>Comandos Básicos</strong></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 12%">
+<col style="width: 87%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;"><strong>Comando</strong></th>
+<th style="text-align: left;"><strong>Função</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">git init</td>
+<td style="text-align: left;">Inicializa um novo repositório Git local.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">git add</td>
+<td style="text-align: left;">Adiciona arquivos ao <em>staging area</em> (preparação para commit). Ex: git add . (todos os arquivos).</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">git commit</td>
+<td style="text-align: left;">Registra as alterações no repositório com uma mensagem descritiva. Ex: git commit -m “mensagem”.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">git push</td>
+<td style="text-align: left;">Envia commits locais para um repositório remoto (ex: GitHub).</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">git pull</td>
+<td style="text-align: left;">Atualiza o repositório local com alterações do remoto (fetch + merge).</td>
+</tr>
+</tbody>
+</table></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table></li>
+</ul></li>
+</ul>
+</section>
+<section id="conceitos-importantes" class="level4">
+<h4 class="anchored" data-anchor-id="conceitos-importantes"><strong>4. Conceitos Importantes</strong></h4>
+<ul>
+<li><p><strong>Repositório</strong>:</p>
+<ul>
+<li>É um diretório onde o Git rastreia as alterações dos arquivos. Pode ser local (na sua máquina) ou remoto (ex: no GitHub).</li>
+</ul></li>
+<li><p><strong>Commit</strong>:</p>
+<ul>
+<li>É um “snapshot” (registro) das alterações feitas nos arquivos em um determinado momento. Cada commit tem um <em>hash</em> único (ID) e uma mensagem descritiva.</li>
+</ul></li>
+</ul>
+</section>
+</section>
+<section id="pip-gerenciador-de-pacotes-do-python" class="level3">
+<h3 class="anchored" data-anchor-id="pip-gerenciador-de-pacotes-do-python"><strong>PIP: Gerenciador de Pacotes do Python</strong></h3>
+<section id="o-que-é-o-pip" class="level4">
+<h4 class="anchored" data-anchor-id="o-que-é-o-pip"><strong>1. O que é o pip?</strong></h4>
+<p>O pip (<em>Pip Installs Packages</em>) é o gerenciador de pacotes padrão para Python. Ele permite:</p>
+<ul>
+<li><p>Instalar, atualizar e remover bibliotecas (pacotes) de terceiros.</p></li>
+<li><p>Gerenciar dependências de projetos Python.</p></li>
+<li><p>Baixar pacotes do PyPI (<em>Python Package Index</em>), o repositório oficial de bibliotecas Python.</p></li>
+</ul>
+</section>
+<section id="como-instalar-pacotes-com-pip-install" class="level4">
+<h4 class="anchored" data-anchor-id="como-instalar-pacotes-com-pip-install"><strong>2. Como instalar pacotes com pip install</strong></h4>
+<ul>
+<li><p><strong>Sintaxe básica</strong> (no terminal/CMD):</p>
+<p>bash</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>pip install nome_do_pacote</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<li><p><strong>Exemplos</strong>:</p>
+<p>bash</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>pip install pandas       <span class="co"># Instala a biblioteca Pandas pip install numpy==1.21.0  # Instala uma versão específica do NumPy pip install --upgrade requests  # Atualiza a biblioteca Requests</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+</ul>
+<!-- -->
+<ul>
+<li><p><strong>Instalar múltiplos pacotes</strong> (via arquivo <strong>requirements.txt</strong>):</p>
+<p>bash</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>pip install <span class="op">-</span>r requirements.txt</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+</ul>
+</section>
+<section id="exemplos-de-bibliotecas-populares" class="level4">
+<h4 class="anchored" data-anchor-id="exemplos-de-bibliotecas-populares"><strong>3. Exemplos de Bibliotecas Populares</strong></h4>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 16%">
+<col style="width: 50%">
+<col style="width: 32%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;"><strong>Biblioteca</strong></th>
+<th style="text-align: left;"><strong>Função Principal</strong></th>
+<th style="text-align: left;"><strong>Exemplo de Uso</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Pandas</td>
+<td style="text-align: left;">Manipulação e análise de dados (DataFrames).</td>
+<td style="text-align: left;">import pandas as pd</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">NumPy</td>
+<td style="text-align: left;">Computação numérica com arrays multidimensionais.</td>
+<td style="text-align: left;">import numpy as np</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Matplotlib</td>
+<td style="text-align: left;">Criação de gráficos e visualizações.</td>
+<td style="text-align: left;">import matplotlib.pyplot as plt</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Requests</td>
+<td style="text-align: left;">Envio de requisições HTTP para APIs.</td>
+<td style="text-align: left;">import requests</td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="conceitos-iniciais-de-python" class="level3">
+<h3 class="anchored" data-anchor-id="conceitos-iniciais-de-python"><strong>Conceitos Iniciais de Python</strong></h3>
+<section id="tipos-de-dados-básicos" class="level4">
+<h4 class="anchored" data-anchor-id="tipos-de-dados-básicos"><strong>1. Tipos de Dados Básicos</strong></h4>
+<p>Python possui tipos de dados primários para representar diferentes valores:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: left;"><strong>Tipo</strong></th>
+<th style="text-align: left;"><strong>Descrição</strong></th>
+<th style="text-align: left;"><strong>Exemplo</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">Números inteiros</td>
+<td style="text-align: left;">idade = 25</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">float</td>
+<td style="text-align: left;">Números decimais</td>
+<td style="text-align: left;">altura = 1.75</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">str</td>
+<td style="text-align: left;">Texto (cadeia de caracteres)</td>
+<td style="text-align: left;">nome = “Ana”</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">Valores lógicos (True/False)</td>
+<td style="text-align: left;">ativo = True</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="variáveis-e-operadores-básicos" class="level4">
+<h4 class="anchored" data-anchor-id="variáveis-e-operadores-básicos"><strong>2. Variáveis e Operadores Básicos</strong></h4>
+<ul>
+<li><p><strong>Variáveis</strong>: Nomes que armazenam valores (não precisam declarar tipo).</p>
+<p>python</p>
+<pre><code>preco = 19.99   mensagem = &quot;Olá, mundo!&quot;  </code></pre></li>
+<li><p><strong>Operadores</strong>:</p>
+<ul>
+<li><p>Aritméticos: <strong>+</strong>, <strong>-</strong>, <strong>*</strong>, <strong>/</strong>, <strong>//</strong> (divisão inteira), <strong>**</strong> (potência).</p></li>
+<li><p>Comparação: <strong>==</strong>, <strong>!=</strong>, <strong>&gt;</strong>, <strong>&lt;</strong>, <strong>&gt;=</strong>, <strong>&lt;=</strong>.</p></li>
+<li><p>Lógicos: <strong>and</strong>, <strong>or</strong>, <strong>not</strong>.</p></li>
+</ul>
+<h4 id="estruturas-de-dados" class="anchored"><strong>3. Estruturas de Dados</strong></h4>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 14%">
+<col style="width: 45%">
+<col style="width: 38%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;"><strong>Estrutura</strong></th>
+<th style="text-align: left;"><strong>Características</strong></th>
+<th style="text-align: left;"><strong>Exemplo</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>Listas</strong></td>
+<td style="text-align: left;">Mutáveis, ordenadas, colchetes <strong>[]</strong></td>
+<td style="text-align: left;"><strong>frutas = [“maçã”, “banana”]</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Tuplas</strong></td>
+<td style="text-align: left;">Imutáveis, parênteses <strong>()</strong></td>
+<td style="text-align: left;"><strong>coordenadas = (10, 20)</strong></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Dicionários</strong></td>
+<td style="text-align: left;">Pares <strong>chave: valor</strong>, chaves únicas, chaves <strong>{}</strong></td>
+<td style="text-align: left;"><strong>pessoa = {“nome”: “Carlos”, “idade”: 30}</strong></td>
+</tr>
+</tbody>
+</table></li>
+</ul>
+</section>
+<section id="estruturas-de-controle" class="level4">
+<h4 class="anchored" data-anchor-id="estruturas-de-controle"><strong>4. Estruturas de Controle</strong></h4>
+<ul>
+<li><p><strong>Condicionais</strong>:</p>
+<p>python</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> nota <span class="op">&gt;=</span> <span class="dv">7</span>:       <span class="bu">print</span>(<span class="st">&quot;Aprovado!&quot;</span>)   </span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">elif</span> nota <span class="op">&gt;=</span> <span class="dv">5</span>:       <span class="bu">print</span>(<span class="st">&quot;Recuperação&quot;</span>)   </span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>        <span class="cf">else</span>:       <span class="bu">print</span>(<span class="st">&quot;Reprovado&quot;</span>)  </span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+</ul>
+<p><strong>Laços</strong>:</p>
+<p>python</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># for (iteração em sequências)   for i in range(5):  # 0, 1, 2, 3, 4       print(i)    </span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="co"># while (executa enquanto condição for verdadeira)   contador = 0   while contador &lt; 3:       print(contador)       contador += 1  </span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="funções" class="level4">
+<h4 class="anchored" data-anchor-id="funções"><strong>5. Funções</strong></h4>
+<ul>
+<li><p><strong>Definição</strong>:</p>
+<p>python</p>
+<pre><code>def saudacao(nome):       return f&quot;Olá, {nome}!&quot;    mensagem = saudacao(&quot;Maria&quot;)  # Chama a função  </code></pre></li>
+<li><p><strong>Parâmetros</strong>: Podem ter valores padrão (<strong>def soma(a, b=1)</strong>).</p></li>
+<li><p><strong>Retorno</strong>: <strong><code>return</code></strong> envia o resultado (se omitido, retorna <strong>None</strong>).</p></li>
+</ul>
+</section>
+<section id="importação-de-bibliotecas" class="level4">
+<h4 class="anchored" data-anchor-id="importação-de-bibliotecas"><strong>6. Importação de Bibliotecas</strong></h4>
+<ul>
+<li><p><strong>Sintaxe</strong>:</p>
+<p>python</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> math                     <span class="co"># Importa tudo   </span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> math <span class="im">import</span> sqrt           <span class="co"># Importa apenas sqrt   </span></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd             <span class="co"># Alias (apelido)  </span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+</ul>
+</section>
+<section id="boas-práticas" class="level4">
+<h4 class="anchored" data-anchor-id="boas-práticas"><strong>7. Boas Práticas</strong></h4>
+<ul>
+<li><p><strong>Comentários</strong>: Use <strong>#</strong> para linhas únicas ou <strong>“““</strong> para docstrings.</p>
+<p>python</p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Calcula a média   media = (nota1 + nota2) / 2  </span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<li><p><strong>Nomes de variáveis</strong>:</p>
+<ul>
+<li><p>Claros e descritivos (<strong>idade</strong> em vez de <strong>x</strong>).</p></li>
+<li><p>Snake_case: <strong>nome_completo</strong>.</p></li>
+</ul></li>
+<li><p><strong>Indentação</strong>: Blocos são definidos por espaços (4 por nível).</p>
+<p>python</p>
+<div class="sourceCode" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> condicao:       <span class="bu">print</span>(<span class="st">&quot;Indentação correta!&quot;</span>)  <span class="co"># 4 espaços  </span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+</ul>
+</section>
+</section>
+<section id="conclusão" class="level3">
+<h3 class="anchored" data-anchor-id="conclusão"><strong>Conclusão</strong></h3>
+<p>Neste trabalho, exploramos os conceitos fundamentais de Git e GitHub, essenciais para o controle de versão e colaboração em projetos de desenvolvimento de software. Compreendemos a diferença entre o Git (ferramenta de versionamento) e o GitHub (plataforma de hospedagem), além dos principais comandos para gerenciar repositórios, como git init, git commit, e git push.</p>
+<p>Também abordamos o pip, o gerenciador de pacotes do Python, que simplifica a instalação e administração de bibliotecas externas, como Pandas, NumPy e Matplotlib, amplamente utilizadas em projetos de análise de dados e computação científica.</p>
+<p>Por fim, revisamos os conceitos básicos de Python, desde tipos de dados e estruturas de controle até funções e boas práticas de programação. Esses fundamentos são cruciais para escrever código eficiente, legível e bem estruturado, facilitando a manutenção e o trabalho em equipe.</p>
+<p>Dominar essas ferramentas e conceitos é um passo importante para qualquer desenvolvedor, pois proporciona uma base sólida para projetos mais complexos e colaborativos. A prática contínua e a exploração de recursos adicionais serão essenciais para aprofundar o conhecimento e aplicar essas habilidades em cenários reais.</p>
+<p>Em resumo, Git, pip e Python formam um ecossistema poderoso para desenvolvimento de software, e seu domínio abre portas para a criação de soluções robustas e inovadoras.</p>
 <!-- -->
 
+</section>
 
 </main>
 <!-- /main column -->
@@ -2847,32 +3159,276 @@ vertical-align: -.125em;
     }
   });
   </script><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Código fonte</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class>
-<div class="sourceCode" id="cb1" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> &quot;1108190 - Análise Exploratória de Dados&quot;</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="an">subtitle:</span><span class="co"> &quot;Apresentação e Motivação&quot;</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="an">author:</span><span class="co"> &quot;Professora Doutora Ana Hermínia Andrade e Silva&quot; # Autora</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="an">lang:</span><span class="co"> pt # Linguagem em português</span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="an">date:</span><span class="co"> &quot;`r format(Sys.Date())`&quot; # Data do relatório</span></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="an">date-format:</span><span class="co"> short # Formato de data curto: dd/MM/yyyy </span></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="an">toc:</span><span class="co"> true # Adiciona um índice no relatório</span></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="an">editor:</span><span class="co"> visual</span></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="an">format:</span><span class="co"> </span></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="co">    html: </span></span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="co">      css: [&quot;custom.css&quot;] </span></span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="co">      code-fold: false</span></span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="co">      code-tools: true</span></span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="co">      theme: </span></span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="co">        light: cosmo</span></span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="co">        dark: vapor # Sugestão: superhero/vapor Mudar o tema do relatório aqui</span></span>
-<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="an">execute:</span></span>
-<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="co">  warning: false</span></span>
-<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a><span class="co">  message: false</span></span>
-<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a><span class="an">reference-location:</span><span class="co"> margin</span></span>
-<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a><span class="an">citation-location:</span><span class="co"> margin</span></span>
-<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="co">#bibliography: references.bib</span></span>
-<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a><span class="an">self-contained-math:</span><span class="co"> true</span></span>
-<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a><span class="an">embed-resources:</span><span class="co"> true</span></span>
-<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button" data-in-quarto-modal><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb11" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> &quot;INTRODUÇÃO AOS SOFTWARES ESTATÍSTICOS&quot;</span></span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a><span class="an">subtitle:</span><span class="co"> &quot;Relatório em Quarto + GitHub&quot;</span></span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a><span class="an">author:</span><span class="co"> &quot;Taciana de Luna Alves&quot; # Autora</span></span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a><span class="an">lang:</span><span class="co"> pt # Linguagem em português</span></span>
+<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a><span class="an">date:</span><span class="co"> &quot;`r format(Sys.Date())`&quot; # Data do relatório</span></span>
+<span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a><span class="an">date-format:</span><span class="co"> short # Formato de data curto: dd/MM/yyyy </span></span>
+<span id="cb11-8"><a href="#cb11-8" aria-hidden="true" tabindex="-1"></a><span class="an">toc:</span><span class="co"> true # Adiciona um índice no relatório</span></span>
+<span id="cb11-9"><a href="#cb11-9" aria-hidden="true" tabindex="-1"></a><span class="an">editor:</span><span class="co"> visual</span></span>
+<span id="cb11-10"><a href="#cb11-10" aria-hidden="true" tabindex="-1"></a><span class="an">format:</span><span class="co"> </span></span>
+<span id="cb11-11"><a href="#cb11-11" aria-hidden="true" tabindex="-1"></a><span class="co">    html: </span></span>
+<span id="cb11-12"><a href="#cb11-12" aria-hidden="true" tabindex="-1"></a><span class="co">      css: [&quot;custom.css&quot;] </span></span>
+<span id="cb11-13"><a href="#cb11-13" aria-hidden="true" tabindex="-1"></a><span class="co">      code-fold: false</span></span>
+<span id="cb11-14"><a href="#cb11-14" aria-hidden="true" tabindex="-1"></a><span class="co">      code-tools: true</span></span>
+<span id="cb11-15"><a href="#cb11-15" aria-hidden="true" tabindex="-1"></a><span class="co">      theme: </span></span>
+<span id="cb11-16"><a href="#cb11-16" aria-hidden="true" tabindex="-1"></a><span class="co">        light: cosmo</span></span>
+<span id="cb11-17"><a href="#cb11-17" aria-hidden="true" tabindex="-1"></a><span class="co">        dark: vapor # Sugestão: superhero/vapor Mudar o tema do relatório aqui</span></span>
+<span id="cb11-18"><a href="#cb11-18" aria-hidden="true" tabindex="-1"></a><span class="an">execute:</span></span>
+<span id="cb11-19"><a href="#cb11-19" aria-hidden="true" tabindex="-1"></a><span class="co">  warning: false</span></span>
+<span id="cb11-20"><a href="#cb11-20" aria-hidden="true" tabindex="-1"></a><span class="co">  message: false</span></span>
+<span id="cb11-21"><a href="#cb11-21" aria-hidden="true" tabindex="-1"></a><span class="an">reference-location:</span><span class="co"> margin</span></span>
+<span id="cb11-22"><a href="#cb11-22" aria-hidden="true" tabindex="-1"></a><span class="an">citation-location:</span><span class="co"> margin</span></span>
+<span id="cb11-23"><a href="#cb11-23" aria-hidden="true" tabindex="-1"></a><span class="co">#bibliography: references.bib</span></span>
+<span id="cb11-24"><a href="#cb11-24" aria-hidden="true" tabindex="-1"></a><span class="an">self-contained-math:</span><span class="co"> true</span></span>
+<span id="cb11-25"><a href="#cb11-25" aria-hidden="true" tabindex="-1"></a><span class="an">embed-resources:</span><span class="co"> true</span></span>
+<span id="cb11-26"><a href="#cb11-26" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb11-27"><a href="#cb11-27" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-28"><a href="#cb11-28" aria-hidden="true" tabindex="-1"></a><span class="fu">### **Git e GitHub**</span></span>
+<span id="cb11-29"><a href="#cb11-29" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-30"><a href="#cb11-30" aria-hidden="true" tabindex="-1"></a><span class="fu">#### **1. O que são?**</span></span>
+<span id="cb11-31"><a href="#cb11-31" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-32"><a href="#cb11-32" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>**Git**: É um sistema de controle de versão distribuído usado para rastrear alterações em arquivos de código-fonte durante o desenvolvimento de software. Foi criado por Linus Torvalds em 2005.</span>
+<span id="cb11-33"><a href="#cb11-33" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-34"><a href="#cb11-34" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>**GitHub**: É uma plataforma de hospedagem baseada em nuvem que utiliza o Git para versionamento. Ela permite que desenvolvedores colaborem em projetos, armazenem repositórios e gerenciem workflows.</span>
+<span id="cb11-35"><a href="#cb11-35" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-36"><a href="#cb11-36" aria-hidden="true" tabindex="-1"></a><span class="fu">#### **2. Para que servem?**</span></span>
+<span id="cb11-37"><a href="#cb11-37" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-38"><a href="#cb11-38" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>**Git**: é um sistema de controle de versão que acompanha as alterações nos arquivos de forma inteligente. O Git é particularmente útil quando você e um grupo de pessoas fazem alterações nos mesmos arquivos ao mesmo tempo.</span>
+<span id="cb11-39"><a href="#cb11-39" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-40"><a href="#cb11-40" aria-hidden="true" tabindex="-1"></a>    Normalmente, para fazer isso em um fluxo de trabalho baseado no Git, você deve:</span>
+<span id="cb11-41"><a href="#cb11-41" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-42"><a href="#cb11-42" aria-hidden="true" tabindex="-1"></a><span class="ss">    -   </span>Controla o histórico de alterações em projetos.</span>
+<span id="cb11-43"><a href="#cb11-43" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-44"><a href="#cb11-44" aria-hidden="true" tabindex="-1"></a><span class="ss">    -   </span>Facilita o trabalho em equipe (mesclando mudanças de diferentes colaboradores).</span>
+<span id="cb11-45"><a href="#cb11-45" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-46"><a href="#cb11-46" aria-hidden="true" tabindex="-1"></a><span class="ss">    -   </span>Permite reverter para versões anteriores em caso de erros.</span>
+<span id="cb11-47"><a href="#cb11-47" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-48"><a href="#cb11-48" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>**GitHub**: O GitHub é uma plataforma baseada em nuvem em que é possível armazenar, compartilhar e trabalhar com outras pessoas para escrever códigos.</span>
+<span id="cb11-49"><a href="#cb11-49" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-50"><a href="#cb11-50" aria-hidden="true" tabindex="-1"></a>    O seguinte é possível ao armazenar códigos em um &quot;repositório&quot; no GitHub:</span>
+<span id="cb11-51"><a href="#cb11-51" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-52"><a href="#cb11-52" aria-hidden="true" tabindex="-1"></a><span class="ss">    -   </span>Hospeda repositórios Git remotamente.</span>
+<span id="cb11-53"><a href="#cb11-53" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-54"><a href="#cb11-54" aria-hidden="true" tabindex="-1"></a><span class="ss">    -   </span>Permite que outras pessoas revisem o seu código e deem sugestões para melhorá-lo.</span>
+<span id="cb11-55"><a href="#cb11-55" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-56"><a href="#cb11-56" aria-hidden="true" tabindex="-1"></a><span class="ss">    -   </span>Oferece ferramentas adicionais como *issues*, *pull requests* e integração contínua (CI/CD).</span>
+<span id="cb11-57"><a href="#cb11-57" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-58"><a href="#cb11-58" aria-hidden="true" tabindex="-1"></a><span class="ss">    -   </span>Funciona como uma rede social para desenvolvedores (compartilhamento de projetos *open source*).</span>
+<span id="cb11-59"><a href="#cb11-59" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-60"><a href="#cb11-60" aria-hidden="true" tabindex="-1"></a>        O trabalho colaborativo, uma das características fundamentais do GitHub, é possível graças ao software de código aberto Git, que serviu como base para a criação do GitHub.</span>
+<span id="cb11-61"><a href="#cb11-61" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-62"><a href="#cb11-62" aria-hidden="true" tabindex="-1"></a>        +--------------------------------------------------------------------------------------------------------------------+</span>
+<span id="cb11-63"><a href="#cb11-63" aria-hidden="true" tabindex="-1"></a>        | **Comandos Básicos**                                                                                               |</span>
+<span id="cb11-64"><a href="#cb11-64" aria-hidden="true" tabindex="-1"></a>        |                                                                                                                    |</span>
+<span id="cb11-65"><a href="#cb11-65" aria-hidden="true" tabindex="-1"></a>        | +-------------+--------------------------------------------------------------------------------------------------+ |</span>
+<span id="cb11-66"><a href="#cb11-66" aria-hidden="true" tabindex="-1"></a>        | | **Comando** | **Função**                                                                                       | |</span>
+<span id="cb11-67"><a href="#cb11-67" aria-hidden="true" tabindex="-1"></a>        | +:==========<span class="al">==+:==</span>===============================================================================================+ |</span>
+<span id="cb11-68"><a href="#cb11-68" aria-hidden="true" tabindex="-1"></a>        | | git init    | Inicializa um novo repositório Git local.                                                        | |</span>
+<span id="cb11-69"><a href="#cb11-69" aria-hidden="true" tabindex="-1"></a>        | +-------------+--------------------------------------------------------------------------------------------------+ |</span>
+<span id="cb11-70"><a href="#cb11-70" aria-hidden="true" tabindex="-1"></a>        | | git add     | Adiciona arquivos ao *staging area* (preparação para commit). Ex: git add . (todos os arquivos). | |</span>
+<span id="cb11-71"><a href="#cb11-71" aria-hidden="true" tabindex="-1"></a>        | +-------------+--------------------------------------------------------------------------------------------------+ |</span>
+<span id="cb11-72"><a href="#cb11-72" aria-hidden="true" tabindex="-1"></a>        | | git commit  | Registra as alterações no repositório com uma mensagem descritiva. Ex: git commit -m &quot;mensagem&quot;. | |</span>
+<span id="cb11-73"><a href="#cb11-73" aria-hidden="true" tabindex="-1"></a>        | +-------------+--------------------------------------------------------------------------------------------------+ |</span>
+<span id="cb11-74"><a href="#cb11-74" aria-hidden="true" tabindex="-1"></a>        | | git push    | Envia commits locais para um repositório remoto (ex: GitHub).                                    | |</span>
+<span id="cb11-75"><a href="#cb11-75" aria-hidden="true" tabindex="-1"></a>        | +-------------+--------------------------------------------------------------------------------------------------+ |</span>
+<span id="cb11-76"><a href="#cb11-76" aria-hidden="true" tabindex="-1"></a>        | | git pull    | Atualiza o repositório local com alterações do remoto (fetch + merge).                           | |</span>
+<span id="cb11-77"><a href="#cb11-77" aria-hidden="true" tabindex="-1"></a>        | +-------------+--------------------------------------------------------------------------------------------------+ |</span>
+<span id="cb11-78"><a href="#cb11-78" aria-hidden="true" tabindex="-1"></a>        +:===================================================================================================================+</span>
+<span id="cb11-79"><a href="#cb11-79" aria-hidden="true" tabindex="-1"></a>        |                                                                                                                    |</span>
+<span id="cb11-80"><a href="#cb11-80" aria-hidden="true" tabindex="-1"></a>        +--------------------------------------------------------------------------------------------------------------------+</span>
+<span id="cb11-81"><a href="#cb11-81" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-82"><a href="#cb11-82" aria-hidden="true" tabindex="-1"></a><span class="fu">#### **4. Conceitos Importantes**</span></span>
+<span id="cb11-83"><a href="#cb11-83" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-84"><a href="#cb11-84" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>**Repositório**:</span>
+<span id="cb11-85"><a href="#cb11-85" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-86"><a href="#cb11-86" aria-hidden="true" tabindex="-1"></a><span class="ss">    -   </span>É um diretório onde o Git rastreia as alterações dos arquivos. Pode ser local (na sua máquina) ou remoto (ex: no GitHub).</span>
+<span id="cb11-87"><a href="#cb11-87" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-88"><a href="#cb11-88" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>**Commit**:</span>
+<span id="cb11-89"><a href="#cb11-89" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-90"><a href="#cb11-90" aria-hidden="true" tabindex="-1"></a><span class="ss">    -   </span>É um &quot;snapshot&quot; (registro) das alterações feitas nos arquivos em um determinado momento. Cada commit tem um *hash* único (ID) e uma mensagem descritiva.</span>
+<span id="cb11-91"><a href="#cb11-91" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-92"><a href="#cb11-92" aria-hidden="true" tabindex="-1"></a><span class="fu">### **PIP: Gerenciador de Pacotes do Python**</span></span>
+<span id="cb11-93"><a href="#cb11-93" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-94"><a href="#cb11-94" aria-hidden="true" tabindex="-1"></a><span class="fu">#### **1. O que é o pip?**</span></span>
+<span id="cb11-95"><a href="#cb11-95" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-96"><a href="#cb11-96" aria-hidden="true" tabindex="-1"></a>O pip (*Pip Installs Packages*) é o gerenciador de pacotes padrão para Python. Ele permite:</span>
+<span id="cb11-97"><a href="#cb11-97" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-98"><a href="#cb11-98" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>Instalar, atualizar e remover bibliotecas (pacotes) de terceiros.</span>
+<span id="cb11-99"><a href="#cb11-99" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-100"><a href="#cb11-100" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>Gerenciar dependências de projetos Python.</span>
+<span id="cb11-101"><a href="#cb11-101" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-102"><a href="#cb11-102" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>Baixar pacotes do PyPI (*Python Package Index*), o repositório oficial de bibliotecas Python.</span>
+<span id="cb11-103"><a href="#cb11-103" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-104"><a href="#cb11-104" aria-hidden="true" tabindex="-1"></a><span class="fu">#### **2. Como instalar pacotes com pip install**</span></span>
+<span id="cb11-105"><a href="#cb11-105" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-106"><a href="#cb11-106" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>**Sintaxe básica** (no terminal/CMD):</span>
+<span id="cb11-107"><a href="#cb11-107" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-108"><a href="#cb11-108" aria-hidden="true" tabindex="-1"></a>    bash</span>
+<span id="cb11-109"><a href="#cb11-109" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-110"><a href="#cb11-110" aria-hidden="true" tabindex="-1"></a>    <span class="in">``` python</span></span>
+<span id="cb11-111"><a href="#cb11-111" aria-hidden="true" tabindex="-1"></a>    pip install nome_do_pacote</span>
+<span id="cb11-112"><a href="#cb11-112" aria-hidden="true" tabindex="-1"></a>    <span class="in">```</span></span>
+<span id="cb11-113"><a href="#cb11-113" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-114"><a href="#cb11-114" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>**Exemplos**:</span>
+<span id="cb11-115"><a href="#cb11-115" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-116"><a href="#cb11-116" aria-hidden="true" tabindex="-1"></a>    bash</span>
+<span id="cb11-117"><a href="#cb11-117" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-118"><a href="#cb11-118" aria-hidden="true" tabindex="-1"></a>    <span class="in">``` python</span></span>
+<span id="cb11-119"><a href="#cb11-119" aria-hidden="true" tabindex="-1"></a>    pip install pandas       <span class="co"># Instala a biblioteca Pandas pip install numpy==1.21.0  # Instala uma versão específica do NumPy pip install --upgrade requests  # Atualiza a biblioteca Requests</span></span>
+<span id="cb11-120"><a href="#cb11-120" aria-hidden="true" tabindex="-1"></a>    <span class="in">```</span></span>
+<span id="cb11-121"><a href="#cb11-121" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-122"><a href="#cb11-122" aria-hidden="true" tabindex="-1"></a><span class="co">&lt;!-- --&gt;</span></span>
+<span id="cb11-123"><a href="#cb11-123" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-124"><a href="#cb11-124" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>**Instalar múltiplos pacotes** (via arquivo **requirements.txt**):</span>
+<span id="cb11-125"><a href="#cb11-125" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-126"><a href="#cb11-126" aria-hidden="true" tabindex="-1"></a>    bash</span>
+<span id="cb11-127"><a href="#cb11-127" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-128"><a href="#cb11-128" aria-hidden="true" tabindex="-1"></a>    <span class="in">``` python</span></span>
+<span id="cb11-129"><a href="#cb11-129" aria-hidden="true" tabindex="-1"></a>    pip install <span class="op">-</span>r requirements.txt</span>
+<span id="cb11-130"><a href="#cb11-130" aria-hidden="true" tabindex="-1"></a>    <span class="in">```</span></span>
+<span id="cb11-131"><a href="#cb11-131" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-132"><a href="#cb11-132" aria-hidden="true" tabindex="-1"></a><span class="fu">#### **3. Exemplos de Bibliotecas Populares**</span></span>
+<span id="cb11-133"><a href="#cb11-133" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-134"><a href="#cb11-134" aria-hidden="true" tabindex="-1"></a>+----------------+---------------------------------------------------+---------------------------------+</span>
+<span id="cb11-135"><a href="#cb11-135" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **Biblioteca** | **Função Principal**                              | **Exemplo de Uso**              <span class="pp">|</span></span>
+<span id="cb11-136"><a href="#cb11-136" aria-hidden="true" tabindex="-1"></a>+:=============<span class="al">==+:==================================================+:==</span>==============================+</span>
+<span id="cb11-137"><a href="#cb11-137" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Pandas         <span class="pp">|</span> Manipulação e análise de dados (DataFrames).      <span class="pp">|</span> import pandas as pd             <span class="pp">|</span></span>
+<span id="cb11-138"><a href="#cb11-138" aria-hidden="true" tabindex="-1"></a>+----------------+---------------------------------------------------+---------------------------------+</span>
+<span id="cb11-139"><a href="#cb11-139" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> NumPy          <span class="pp">|</span> Computação numérica com arrays multidimensionais. <span class="pp">|</span> import numpy as np              <span class="pp">|</span></span>
+<span id="cb11-140"><a href="#cb11-140" aria-hidden="true" tabindex="-1"></a>+----------------+---------------------------------------------------+---------------------------------+</span>
+<span id="cb11-141"><a href="#cb11-141" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Matplotlib     <span class="pp">|</span> Criação de gráficos e visualizações.              <span class="pp">|</span> import matplotlib.pyplot as plt <span class="pp">|</span></span>
+<span id="cb11-142"><a href="#cb11-142" aria-hidden="true" tabindex="-1"></a>+----------------+---------------------------------------------------+---------------------------------+</span>
+<span id="cb11-143"><a href="#cb11-143" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Requests       <span class="pp">|</span> Envio de requisições HTTP para APIs.              <span class="pp">|</span> import requests                 <span class="pp">|</span></span>
+<span id="cb11-144"><a href="#cb11-144" aria-hidden="true" tabindex="-1"></a>+----------------+---------------------------------------------------+---------------------------------+</span>
+<span id="cb11-145"><a href="#cb11-145" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-146"><a href="#cb11-146" aria-hidden="true" tabindex="-1"></a><span class="fu">### **Conceitos Iniciais de Python**</span></span>
+<span id="cb11-147"><a href="#cb11-147" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-148"><a href="#cb11-148" aria-hidden="true" tabindex="-1"></a><span class="fu">#### **1. Tipos de Dados Básicos**</span></span>
+<span id="cb11-149"><a href="#cb11-149" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-150"><a href="#cb11-150" aria-hidden="true" tabindex="-1"></a>Python possui tipos de dados primários para representar diferentes valores:</span>
+<span id="cb11-151"><a href="#cb11-151" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-152"><a href="#cb11-152" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **Tipo** | **Descrição**                | **Exemplo**   <span class="pp">|</span></span>
+<span id="cb11-153"><a href="#cb11-153" aria-hidden="true" tabindex="-1"></a><span class="pp">|:---------|:-----------------------------|:--------------|</span></span>
+<span id="cb11-154"><a href="#cb11-154" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> int      <span class="pp">|</span> Números inteiros             <span class="pp">|</span> idade = 25    <span class="pp">|</span></span>
+<span id="cb11-155"><a href="#cb11-155" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> float    <span class="pp">|</span> Números decimais             <span class="pp">|</span> altura = 1.75 <span class="pp">|</span></span>
+<span id="cb11-156"><a href="#cb11-156" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> str      <span class="pp">|</span> Texto (cadeia de caracteres) <span class="pp">|</span> nome = &quot;Ana&quot;  <span class="pp">|</span></span>
+<span id="cb11-157"><a href="#cb11-157" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> bool     <span class="pp">|</span> Valores lógicos (True/False) <span class="pp">|</span> ativo = True  <span class="pp">|</span></span>
+<span id="cb11-158"><a href="#cb11-158" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-159"><a href="#cb11-159" aria-hidden="true" tabindex="-1"></a><span class="fu">#### **2. Variáveis e Operadores Básicos**</span></span>
+<span id="cb11-160"><a href="#cb11-160" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-161"><a href="#cb11-161" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>**Variáveis**: Nomes que armazenam valores (não precisam declarar tipo).</span>
+<span id="cb11-162"><a href="#cb11-162" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-163"><a href="#cb11-163" aria-hidden="true" tabindex="-1"></a>    python</span>
+<span id="cb11-164"><a href="#cb11-164" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-165"><a href="#cb11-165" aria-hidden="true" tabindex="-1"></a>    <span class="in">```         </span></span>
+<span id="cb11-166"><a href="#cb11-166" aria-hidden="true" tabindex="-1"></a><span class="in">    preco = 19.99   mensagem = &quot;Olá, mundo!&quot;  </span></span>
+<span id="cb11-167"><a href="#cb11-167" aria-hidden="true" tabindex="-1"></a><span class="in">    ```</span></span>
+<span id="cb11-168"><a href="#cb11-168" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-169"><a href="#cb11-169" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>**Operadores**:</span>
+<span id="cb11-170"><a href="#cb11-170" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-171"><a href="#cb11-171" aria-hidden="true" tabindex="-1"></a><span class="ss">    -   </span>Aritméticos: **+**, **-**, **\***, **/**, **//** (divisão inteira), **\*\*** (potência).</span>
+<span id="cb11-172"><a href="#cb11-172" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-173"><a href="#cb11-173" aria-hidden="true" tabindex="-1"></a><span class="ss">    -   </span>Comparação: **==**, **!=**, **\&gt;**, **\&lt;**, **\&gt;=**, **\&lt;=**.</span>
+<span id="cb11-174"><a href="#cb11-174" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-175"><a href="#cb11-175" aria-hidden="true" tabindex="-1"></a><span class="ss">    -   </span>Lógicos: **and**, **or**, **not**.</span>
+<span id="cb11-176"><a href="#cb11-176" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-177"><a href="#cb11-177" aria-hidden="true" tabindex="-1"></a>    #### **3. Estruturas de Dados**</span>
+<span id="cb11-178"><a href="#cb11-178" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-179"><a href="#cb11-179" aria-hidden="true" tabindex="-1"></a><span class="in">    +-----------------+------------------------------------------------------+----------------------------------------------+</span></span>
+<span id="cb11-180"><a href="#cb11-180" aria-hidden="true" tabindex="-1"></a><span class="in">    | **Estrutura**   | **Características**                                  | **Exemplo**                                  |</span></span>
+<span id="cb11-181"><a href="#cb11-181" aria-hidden="true" tabindex="-1"></a><span class="in">    +:================+:=====================================================+:=============================================+</span></span>
+<span id="cb11-182"><a href="#cb11-182" aria-hidden="true" tabindex="-1"></a><span class="in">    | **Listas**      | Mutáveis, ordenadas, colchetes **\[\]**              | **frutas = \[&quot;maçã&quot;, &quot;banana&quot;\]**            |</span></span>
+<span id="cb11-183"><a href="#cb11-183" aria-hidden="true" tabindex="-1"></a><span class="in">    +-----------------+------------------------------------------------------+----------------------------------------------+</span></span>
+<span id="cb11-184"><a href="#cb11-184" aria-hidden="true" tabindex="-1"></a><span class="in">    | **Tuplas**      | Imutáveis, parênteses **()**                         | **coordenadas = (10, 20)**                   |</span></span>
+<span id="cb11-185"><a href="#cb11-185" aria-hidden="true" tabindex="-1"></a><span class="in">    +-----------------+------------------------------------------------------+----------------------------------------------+</span></span>
+<span id="cb11-186"><a href="#cb11-186" aria-hidden="true" tabindex="-1"></a><span class="in">    | **Dicionários** | Pares **chave: valor**, chaves únicas, chaves **{}** | **pessoa = {&quot;nome&quot;: &quot;Carlos&quot;, &quot;idade&quot;: 30}** |</span></span>
+<span id="cb11-187"><a href="#cb11-187" aria-hidden="true" tabindex="-1"></a><span class="in">    +-----------------+------------------------------------------------------+----------------------------------------------+</span></span>
+<span id="cb11-188"><a href="#cb11-188" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-189"><a href="#cb11-189" aria-hidden="true" tabindex="-1"></a><span class="fu">#### **4. Estruturas de Controle**</span></span>
+<span id="cb11-190"><a href="#cb11-190" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-191"><a href="#cb11-191" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>**Condicionais**:</span>
+<span id="cb11-192"><a href="#cb11-192" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-193"><a href="#cb11-193" aria-hidden="true" tabindex="-1"></a>    python</span>
+<span id="cb11-194"><a href="#cb11-194" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-195"><a href="#cb11-195" aria-hidden="true" tabindex="-1"></a>    <span class="in">``` python</span></span>
+<span id="cb11-196"><a href="#cb11-196" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> nota <span class="op">&gt;=</span> <span class="dv">7</span>:       <span class="bu">print</span>(<span class="st">&quot;Aprovado!&quot;</span>)   </span>
+<span id="cb11-197"><a href="#cb11-197" aria-hidden="true" tabindex="-1"></a>        <span class="cf">elif</span> nota <span class="op">&gt;=</span> <span class="dv">5</span>:       <span class="bu">print</span>(<span class="st">&quot;Recuperação&quot;</span>)   </span>
+<span id="cb11-198"><a href="#cb11-198" aria-hidden="true" tabindex="-1"></a>            <span class="cf">else</span>:       <span class="bu">print</span>(<span class="st">&quot;Reprovado&quot;</span>)  </span>
+<span id="cb11-199"><a href="#cb11-199" aria-hidden="true" tabindex="-1"></a>    <span class="in">```</span></span>
+<span id="cb11-200"><a href="#cb11-200" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-201"><a href="#cb11-201" aria-hidden="true" tabindex="-1"></a>**Laços**:</span>
+<span id="cb11-202"><a href="#cb11-202" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-203"><a href="#cb11-203" aria-hidden="true" tabindex="-1"></a>python</span>
+<span id="cb11-204"><a href="#cb11-204" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-205"><a href="#cb11-205" aria-hidden="true" tabindex="-1"></a><span class="in">``` python</span></span>
+<span id="cb11-206"><a href="#cb11-206" aria-hidden="true" tabindex="-1"></a><span class="co"># for (iteração em sequências)   for i in range(5):  # 0, 1, 2, 3, 4       print(i)    </span></span>
+<span id="cb11-207"><a href="#cb11-207" aria-hidden="true" tabindex="-1"></a><span class="co"># while (executa enquanto condição for verdadeira)   contador = 0   while contador &lt; 3:       print(contador)       contador += 1  </span></span>
+<span id="cb11-208"><a href="#cb11-208" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb11-209"><a href="#cb11-209" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-210"><a href="#cb11-210" aria-hidden="true" tabindex="-1"></a><span class="fu">#### **5. Funções**</span></span>
+<span id="cb11-211"><a href="#cb11-211" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-212"><a href="#cb11-212" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>**Definição**:</span>
+<span id="cb11-213"><a href="#cb11-213" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-214"><a href="#cb11-214" aria-hidden="true" tabindex="-1"></a>    python</span>
+<span id="cb11-215"><a href="#cb11-215" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-216"><a href="#cb11-216" aria-hidden="true" tabindex="-1"></a>    <span class="in">```         </span></span>
+<span id="cb11-217"><a href="#cb11-217" aria-hidden="true" tabindex="-1"></a><span class="in">    def saudacao(nome):       return f&quot;Olá, {nome}!&quot;    mensagem = saudacao(&quot;Maria&quot;)  # Chama a função  </span></span>
+<span id="cb11-218"><a href="#cb11-218" aria-hidden="true" tabindex="-1"></a><span class="in">    ```</span></span>
+<span id="cb11-219"><a href="#cb11-219" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-220"><a href="#cb11-220" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>**Parâmetros**: Podem ter valores padrão (**def soma(a, b=1)**).</span>
+<span id="cb11-221"><a href="#cb11-221" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-222"><a href="#cb11-222" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>**Retorno**: **`return`** envia o resultado (se omitido, retorna **None**).</span>
+<span id="cb11-223"><a href="#cb11-223" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-224"><a href="#cb11-224" aria-hidden="true" tabindex="-1"></a><span class="fu">#### **6. Importação de Bibliotecas**</span></span>
+<span id="cb11-225"><a href="#cb11-225" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-226"><a href="#cb11-226" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>**Sintaxe**:</span>
+<span id="cb11-227"><a href="#cb11-227" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-228"><a href="#cb11-228" aria-hidden="true" tabindex="-1"></a>    python</span>
+<span id="cb11-229"><a href="#cb11-229" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-230"><a href="#cb11-230" aria-hidden="true" tabindex="-1"></a>    <span class="in">``` python</span></span>
+<span id="cb11-231"><a href="#cb11-231" aria-hidden="true" tabindex="-1"></a>    <span class="im">import</span> math                     <span class="co"># Importa tudo   </span></span>
+<span id="cb11-232"><a href="#cb11-232" aria-hidden="true" tabindex="-1"></a>    <span class="im">from</span> math <span class="im">import</span> sqrt           <span class="co"># Importa apenas sqrt   </span></span>
+<span id="cb11-233"><a href="#cb11-233" aria-hidden="true" tabindex="-1"></a>    <span class="im">import</span> pandas <span class="im">as</span> pd             <span class="co"># Alias (apelido)  </span></span>
+<span id="cb11-234"><a href="#cb11-234" aria-hidden="true" tabindex="-1"></a>    <span class="in">```</span></span>
+<span id="cb11-235"><a href="#cb11-235" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-236"><a href="#cb11-236" aria-hidden="true" tabindex="-1"></a><span class="fu">#### **7. Boas Práticas**</span></span>
+<span id="cb11-237"><a href="#cb11-237" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-238"><a href="#cb11-238" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>**Comentários**: Use **\#** para linhas únicas ou **&quot;&quot;&quot;** para docstrings.</span>
+<span id="cb11-239"><a href="#cb11-239" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-240"><a href="#cb11-240" aria-hidden="true" tabindex="-1"></a>    python</span>
+<span id="cb11-241"><a href="#cb11-241" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-242"><a href="#cb11-242" aria-hidden="true" tabindex="-1"></a>    <span class="in">``` python</span></span>
+<span id="cb11-243"><a href="#cb11-243" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Calcula a média   media = (nota1 + nota2) / 2  </span></span>
+<span id="cb11-244"><a href="#cb11-244" aria-hidden="true" tabindex="-1"></a>    <span class="in">```</span></span>
+<span id="cb11-245"><a href="#cb11-245" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-246"><a href="#cb11-246" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>**Nomes de variáveis**:</span>
+<span id="cb11-247"><a href="#cb11-247" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-248"><a href="#cb11-248" aria-hidden="true" tabindex="-1"></a><span class="ss">    -   </span>Claros e descritivos (**idade** em vez de **x**).</span>
+<span id="cb11-249"><a href="#cb11-249" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-250"><a href="#cb11-250" aria-hidden="true" tabindex="-1"></a><span class="ss">    -   </span>Snake_case: **nome_completo**.</span>
+<span id="cb11-251"><a href="#cb11-251" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-252"><a href="#cb11-252" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>**Indentação**: Blocos são definidos por espaços (4 por nível).</span>
+<span id="cb11-253"><a href="#cb11-253" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-254"><a href="#cb11-254" aria-hidden="true" tabindex="-1"></a>    python</span>
+<span id="cb11-255"><a href="#cb11-255" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-256"><a href="#cb11-256" aria-hidden="true" tabindex="-1"></a>    <span class="in">``` python</span></span>
+<span id="cb11-257"><a href="#cb11-257" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> condicao:       <span class="bu">print</span>(<span class="st">&quot;Indentação correta!&quot;</span>)  <span class="co"># 4 espaços  </span></span>
+<span id="cb11-258"><a href="#cb11-258" aria-hidden="true" tabindex="-1"></a>    <span class="in">```</span></span>
+<span id="cb11-259"><a href="#cb11-259" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-260"><a href="#cb11-260" aria-hidden="true" tabindex="-1"></a><span class="fu">### **Conclusão**</span></span>
+<span id="cb11-261"><a href="#cb11-261" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-262"><a href="#cb11-262" aria-hidden="true" tabindex="-1"></a>Neste trabalho, exploramos os conceitos fundamentais de Git e GitHub, essenciais para o controle de versão e colaboração em projetos de desenvolvimento de software. Compreendemos a diferença entre o Git (ferramenta de versionamento) e o GitHub (plataforma de hospedagem), além dos principais comandos para gerenciar repositórios, como git init, git commit, e git push.</span>
+<span id="cb11-263"><a href="#cb11-263" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-264"><a href="#cb11-264" aria-hidden="true" tabindex="-1"></a>Também abordamos o pip, o gerenciador de pacotes do Python, que simplifica a instalação e administração de bibliotecas externas, como Pandas, NumPy e Matplotlib, amplamente utilizadas em projetos de análise de dados e computação científica.</span>
+<span id="cb11-265"><a href="#cb11-265" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-266"><a href="#cb11-266" aria-hidden="true" tabindex="-1"></a>Por fim, revisamos os conceitos básicos de Python, desde tipos de dados e estruturas de controle até funções e boas práticas de programação. Esses fundamentos são cruciais para escrever código eficiente, legível e bem estruturado, facilitando a manutenção e o trabalho em equipe.</span>
+<span id="cb11-267"><a href="#cb11-267" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-268"><a href="#cb11-268" aria-hidden="true" tabindex="-1"></a>Dominar essas ferramentas e conceitos é um passo importante para qualquer desenvolvedor, pois proporciona uma base sólida para projetos mais complexos e colaborativos. A prática contínua e a exploração de recursos adicionais serão essenciais para aprofundar o conhecimento e aplicar essas habilidades em cenários reais.</span>
+<span id="cb11-269"><a href="#cb11-269" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-270"><a href="#cb11-270" aria-hidden="true" tabindex="-1"></a>Em resumo, Git, pip e Python formam um ecossistema poderoso para desenvolvimento de software, e seu domínio abre portas para a criação de soluções robustas e inovadoras.</span></code><button title="Copiar para a área de transferência" class="code-copy-button" data-in-quarto-modal><i class="bi"></i></button></pre></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 
