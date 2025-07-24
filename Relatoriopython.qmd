@@ -59,24 +59,25 @@ embed-resources: true
 
         O trabalho colaborativo, uma das características fundamentais do GitHub, é possível graças ao software de código aberto Git, que serviu como base para a criação do GitHub.
 
-        +------------------------------------------------------------------------------------------------------------------------------------------+
-        | **Comandos Básicos**                                                                                                                     |
-        |                                                                                                                                          |
-        | +-----------------------------------+--------------------------------------------------------------------------------------------------+ |
-        | | **Comando**                       | **Função**                                                                                       | |
-        | +:==================================+:=================================================================================================+ |
-        | | git init                          | Inicializa um novo repositório Git local.                                                        | |
-        | +-----------------------------------+--------------------------------------------------------------------------------------------------+ |
-        | | git add                           | Adiciona arquivos ao *staging area* (preparação para commit). Ex: git add . (todos os arquivos). | |
-        | +-----------------------------------+--------------------------------------------------------------------------------------------------+ |
-        | | git commit                        | Registra as alterações no repositório com uma mensagem descritiva. Ex: git commit -m "mensagem". | |
-        | +-----------------------------------+--------------------------------------------------------------------------------------------------+ |
-        | | git push                          | Envia commits locais para um repositório remoto (ex: GitHub).                                    | |
-        | +-----------------------------------+--------------------------------------------------------------------------------------------------+ |
-        | | git pull                          | Atualiza o repositório local com alterações do remoto (fetch + merge).                           | |
-        | +-----------------------------------+--------------------------------------------------------------------------------------------------+ |
-        +:=========================================================================================================================================+
-        +------------------------------------------------------------------------------------------------------------------------------------------+
+        +--------------------------------------------------------------------------------------------------------------------+
+        | **Comandos Básicos**                                                                                               |
+        |                                                                                                                    |
+        | +-------------+--------------------------------------------------------------------------------------------------+ |
+        | | **Comando** | **Função**                                                                                       | |
+        | +:============+:=================================================================================================+ |
+        | | git init    | Inicializa um novo repositório Git local.                                                        | |
+        | +-------------+--------------------------------------------------------------------------------------------------+ |
+        | | git add     | Adiciona arquivos ao *staging area* (preparação para commit). Ex: git add . (todos os arquivos). | |
+        | +-------------+--------------------------------------------------------------------------------------------------+ |
+        | | git commit  | Registra as alterações no repositório com uma mensagem descritiva. Ex: git commit -m "mensagem". | |
+        | +-------------+--------------------------------------------------------------------------------------------------+ |
+        | | git push    | Envia commits locais para um repositório remoto (ex: GitHub).                                    | |
+        | +-------------+--------------------------------------------------------------------------------------------------+ |
+        | | git pull    | Atualiza o repositório local com alterações do remoto (fetch + merge).                           | |
+        | +-------------+--------------------------------------------------------------------------------------------------+ |
+        +:===================================================================================================================+
+        |                                                                                                                    |
+        +--------------------------------------------------------------------------------------------------------------------+
 
 #### **4. Conceitos Importantes**
 
@@ -130,12 +131,17 @@ O pip (*Pip Installs Packages*) é o gerenciador de pacotes padrão para Python.
 
 #### **3. Exemplos de Bibliotecas Populares**
 
-| **Biblioteca** | **Função Principal** | **Exemplo de Uso** |
-|:---|:---|:---|
-| Pandas | Manipulação e análise de dados (DataFrames). | import pandas as pd |
-| NumPy | Computação numérica com arrays multidimensionais. | import numpy as np |
-| Matplotlib | Criação de gráficos e visualizações. | import matplotlib.pyplot as plt |
-| Requests | Envio de requisições HTTP para APIs. | import requests |
++----------------+---------------------------------------------------+---------------------------------+
+| **Biblioteca** | **Função Principal**                              | **Exemplo de Uso**              |
++:===============+:==================================================+:================================+
+| Pandas         | Manipulação e análise de dados (DataFrames).      | import pandas as pd             |
++----------------+---------------------------------------------------+---------------------------------+
+| NumPy          | Computação numérica com arrays multidimensionais. | import numpy as np              |
++----------------+---------------------------------------------------+---------------------------------+
+| Matplotlib     | Criação de gráficos e visualizações.              | import matplotlib.pyplot as plt |
++----------------+---------------------------------------------------+---------------------------------+
+| Requests       | Envio de requisições HTTP para APIs.              | import requests                 |
++----------------+---------------------------------------------------+---------------------------------+
 
 ### **Conceitos Iniciais de Python**
 
@@ -170,11 +176,15 @@ Python possui tipos de dados primários para representar diferentes valores:
 
     #### **3. Estruturas de Dados**
 
-    | **Estrutura** | **Características** | **Exemplo** |
-    |:---|:---|:---|
-    | **Listas** | Mutáveis, ordenadas, colchetes **\[\]** | **frutas = \["maçã", "banana"\]** |
-    | **Tuplas** | Imutáveis, parênteses **()** | **coordenadas = (10, 20)** |
+    +-----------------+------------------------------------------------------+----------------------------------------------+
+    | **Estrutura**   | **Características**                                  | **Exemplo**                                  |
+    +:================+:=====================================================+:=============================================+
+    | **Listas**      | Mutáveis, ordenadas, colchetes **\[\]**              | **frutas = \["maçã", "banana"\]**            |
+    +-----------------+------------------------------------------------------+----------------------------------------------+
+    | **Tuplas**      | Imutáveis, parênteses **()**                         | **coordenadas = (10, 20)**                   |
+    +-----------------+------------------------------------------------------+----------------------------------------------+
     | **Dicionários** | Pares **chave: valor**, chaves únicas, chaves **{}** | **pessoa = {"nome": "Carlos", "idade": 30}** |
+    +-----------------+------------------------------------------------------+----------------------------------------------+
 
 #### **4. Estruturas de Controle**
 
@@ -246,3 +256,15 @@ python
     ``` python
     if condicao:       print("Indentação correta!")  # 4 espaços  
     ```
+
+### **Conclusão**
+
+Neste trabalho, exploramos os conceitos fundamentais de Git e GitHub, essenciais para o controle de versão e colaboração em projetos de desenvolvimento de software. Compreendemos a diferença entre o Git (ferramenta de versionamento) e o GitHub (plataforma de hospedagem), além dos principais comandos para gerenciar repositórios, como git init, git commit, e git push.
+
+Também abordamos o pip, o gerenciador de pacotes do Python, que simplifica a instalação e administração de bibliotecas externas, como Pandas, NumPy e Matplotlib, amplamente utilizadas em projetos de análise de dados e computação científica.
+
+Por fim, revisamos os conceitos básicos de Python, desde tipos de dados e estruturas de controle até funções e boas práticas de programação. Esses fundamentos são cruciais para escrever código eficiente, legível e bem estruturado, facilitando a manutenção e o trabalho em equipe.
+
+Dominar essas ferramentas e conceitos é um passo importante para qualquer desenvolvedor, pois proporciona uma base sólida para projetos mais complexos e colaborativos. A prática contínua e a exploração de recursos adicionais serão essenciais para aprofundar o conhecimento e aplicar essas habilidades em cenários reais.
+
+Em resumo, Git, pip e Python formam um ecossistema poderoso para desenvolvimento de software, e seu domínio abre portas para a criação de soluções robustas e inovadoras.
