@@ -106,7 +106,7 @@ O pip (*Pip Installs Packages*) é o gerenciador de pacotes padrão para Python.
 
     bash
 
-    ```         
+    ``` python
     pip install nome_do_pacote
     ```
 
@@ -114,17 +114,17 @@ O pip (*Pip Installs Packages*) é o gerenciador de pacotes padrão para Python.
 
     bash
 
-    ```         
+    ``` python
     pip install pandas       # Instala a biblioteca Pandas pip install numpy==1.21.0  # Instala uma versão específica do NumPy pip install --upgrade requests  # Atualiza a biblioteca Requests
     ```
 
 <!-- -->
 
--   **Instalar múltiplos pacotes** (via arquivo **`requirements.txt`**):
+-   **Instalar múltiplos pacotes** (via arquivo **requirements.txt**):
 
     bash
 
-    ```         
+    ``` python
     pip install -r requirements.txt
     ```
 
@@ -132,10 +132,10 @@ O pip (*Pip Installs Packages*) é o gerenciador de pacotes padrão para Python.
 
 | **Biblioteca** | **Função Principal** | **Exemplo de Uso** |
 |:---|:---|:---|
-| **Pandas** | Manipulação e análise de dados (DataFrames). | **`import pandas as pd`** |
-| **NumPy** | Computação numérica com arrays multidimensionais. | **`import numpy as np`** |
-| **Matplotlib** | Criação de gráficos e visualizações. | **`import matplotlib.pyplot as plt`** |
-| **Requests** | Envio de requisições HTTP para APIs. | **`import requests`** |
+| Pandas | Manipulação e análise de dados (DataFrames). | import pandas as pd |
+| NumPy | Computação numérica com arrays multidimensionais. | import numpy as np |
+| Matplotlib | Criação de gráficos e visualizações. | import matplotlib.pyplot as plt |
+| Requests | Envio de requisições HTTP para APIs. | import requests |
 
 ### **Conceitos Iniciais de Python**
 
@@ -143,12 +143,12 @@ O pip (*Pip Installs Packages*) é o gerenciador de pacotes padrão para Python.
 
 Python possui tipos de dados primários para representar diferentes valores:
 
-| **Tipo**  | **Descrição**                        | **Exemplo**       |
-|:----------|:-------------------------------------|:------------------|
-| **int**   | Números inteiros                     | **idade = 25**    |
-| **float** | Números decimais                     | **altura = 1.75** |
-| **str**   | Texto (cadeia de caracteres)         | **nome = "Ana"**  |
-| **bool**  | Valores lógicos (**True**/**False**) | **ativo = True**  |
+| **Tipo** | **Descrição**                | **Exemplo**   |
+|:---------|:-----------------------------|:--------------|
+| int      | Números inteiros             | idade = 25    |
+| float    | Números decimais             | altura = 1.75 |
+| str      | Texto (cadeia de caracteres) | nome = "Ana"  |
+| bool     | Valores lógicos (True/False) | ativo = True  |
 
 #### **2. Variáveis e Operadores Básicos**
 
@@ -182,16 +182,19 @@ Python possui tipos de dados primários para representar diferentes valores:
 
     python
 
-    ```         
-    if nota >= 7:       print("Aprovado!")   elif nota >= 5:       print("Recuperação")   else:       print("Reprovado")  
+    ``` python
+    if nota >= 7:       print("Aprovado!")   
+        elif nota >= 5:       print("Recuperação")   
+            else:       print("Reprovado")  
     ```
 
 **Laços**:
 
 python
 
-```         
-# for (iteração em sequências)   for i in range(5):  # 0, 1, 2, 3, 4       print(i)    # while (executa enquanto condição for verdadeira)   contador = 0   while contador < 3:       print(contador)       contador += 1  
+``` python
+# for (iteração em sequências)   for i in range(5):  # 0, 1, 2, 3, 4       print(i)    
+# while (executa enquanto condição for verdadeira)   contador = 0   while contador < 3:       print(contador)       contador += 1  
 ```
 
 #### **5. Funções**
@@ -204,9 +207,9 @@ python
     def saudacao(nome):       return f"Olá, {nome}!"    mensagem = saudacao("Maria")  # Chama a função  
     ```
 
--   **Parâmetros**: Podem ter valores padrão (**`def soma(a, b=1)`**).
+-   **Parâmetros**: Podem ter valores padrão (**def soma(a, b=1)**).
 
--   **Retorno**: **`return`** envia o resultado (se omitido, retorna **`None`**).
+-   **Retorno**: **`return`** envia o resultado (se omitido, retorna **None**).
 
 #### **6. Importação de Bibliotecas**
 
@@ -214,30 +217,32 @@ python
 
     python
 
-    ```         
-    import math                     # Importa tudo   from math import sqrt           # Importa apenas sqrt   import pandas as pd             # Alias (apelido)  
+    ``` python
+    import math                     # Importa tudo   
+    from math import sqrt           # Importa apenas sqrt   
+    import pandas as pd             # Alias (apelido)  
     ```
 
 #### **7. Boas Práticas**
 
--   **Comentários**: Use **`#`** para linhas únicas ou **`"""`** para docstrings.
+-   **Comentários**: Use **\#** para linhas únicas ou **"""** para docstrings.
 
     python
 
-    ```         
+    ``` python
     # Calcula a média   media = (nota1 + nota2) / 2  
     ```
 
 -   **Nomes de variáveis**:
 
-    -   Claros e descritivos (**`idade`** em vez de **`x`**).
+    -   Claros e descritivos (**idade** em vez de **x**).
 
-    -   Snake_case: **`nome_completo`**.
+    -   Snake_case: **nome_completo**.
 
 -   **Indentação**: Blocos são definidos por espaços (4 por nível).
 
     python
 
-    ```         
+    ``` python
     if condicao:       print("Indentação correta!")  # 4 espaços  
     ```
