@@ -1,4 +1,26 @@
 ---
-title: "Untitled"
-format: html
+title: "INTRODUÇÃO AOS SOFTWARES ESTATÍSTICOS"
+subtitle: "Relatório em Quarto + GitHub"
+author: "Taciana de Luna Alves" # Autora
+lang: pt # Linguagem em português
+date: "`r format(Sys.Date())`" # Data do relatório
+date-format: short # Formato de data curto: dd/MM/yyyy 
+toc: true # Adiciona um índice no relatório
+editor: visual
+format: 
+    html: 
+      css: ["custom.css"] 
+      code-fold: false
+      code-tools: true
+      theme: 
+        light: cosmo
+        dark: vapor # Sugestão: superhero/vapor Mudar o tema do relatório aqui
+execute:
+  warning: false
+  message: false
+reference-location: margin
+citation-location: margin
+#bibliography: references.bib
+self-contained-math: true
+embed-resources: true
 ---
