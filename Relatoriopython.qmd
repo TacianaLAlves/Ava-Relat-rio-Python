@@ -24,3 +24,122 @@ citation-location: margin
 self-contained-math: true
 embed-resources: true
 ---
+
+### **Git e GitHub**
+
+#### **1. O que são?**
+
+-   **Git**: É um **sistema de controle de versão distribuído** usado para rastrear alterações em arquivos de código-fonte durante o desenvolvimento de software. Foi criado por Linus Torvalds em 2005.
+
+-   **GitHub**: É uma **plataforma de hospedagem baseada em nuvem** que utiliza o Git para versionamento. Ela permite que desenvolvedores colaborem em projetos, armazenem repositórios e gerenciem workflows.
+
+#### **2. Para que servem?**
+
+-   **Git**: é um sistema de controle de versão que acompanha as alterações nos arquivos de forma inteligente. O Git é particularmente útil quando você e um grupo de pessoas fazem alterações nos mesmos arquivos ao mesmo tempo.
+
+    Normalmente, para fazer isso em um fluxo de trabalho baseado no Git, você deve:
+
+    -   Controla o histórico de alterações em projetos.
+
+    -   Facilita o trabalho em equipe (mesclando mudanças de diferentes colaboradores).
+
+    -   Permite reverter para versões anteriores em caso de erros.
+
+-   **GitHub**: O GitHub é uma plataforma baseada em nuvem em que é possível armazenar, compartilhar e trabalhar com outras pessoas para escrever códigos.
+
+    O seguinte é possível ao armazenar códigos em um "repositório" no GitHub:
+
+    -   Hospeda repositórios Git remotamente.
+
+    -   Permite que outras pessoas revisem o seu código e deem sugestões para melhorá-lo.
+
+    -   Oferece ferramentas adicionais como *issues*, *pull requests* e integração contínua (CI/CD).
+
+    -   Funciona como uma rede social para desenvolvedores (compartilhamento de projetos *open source*).
+
+        O trabalho colaborativo, uma das características fundamentais do GitHub, é possível graças ao software de código aberto Git, que serviu como base para a criação do GitHub.
+
+        +---------------------------------------------------------------------------------------------------------------------------+
+        | **Comandos Básicos**                                                                                                      |
+        |                                                                                                                           |
+        | | **Comando** | **Função** |                                                                                              |
+        | |:---|:---|                                                                                                               |
+        | | git init | Inicializa um novo repositório Git local. |                                                                  |
+        | | git add | Adiciona arquivos ao *staging area* (preparação para commit). Ex: **git add .** (todos os arquivos). |        |
+        | | **git commit** | Registra as alterações no repositório com uma mensagem descritiva. Ex: **git commit -m "mensagem"**. | |
+        | | **git push** | Envia commits locais para um repositório remoto (ex: GitHub). |                                          |
+        | | **git pull** | Atualiza o repositório local com alterações do remoto (fetch + merge). |                                 |
+        +:==========================================================================================================================+
+        +---------------------------------------------------------------------------------------------------------------------------+
+
+#### **4. Conceitos Importantes**
+
+-   **Repositório**:
+
+    -   É um **diretório** onde o Git rastreia as alterações dos arquivos. Pode ser local (na sua máquina) ou remoto (ex: no GitHub).
+
+-   **Commit**:
+
+    -   É um **"snapshot"** (registro) das alterações feitas nos arquivos em um determinado momento. Cada commit tem um *hash* único (ID) e uma mensagem descritiva.
+
+### **PIP: Gerenciador de Pacotes do Python**
+
+#### **1. O que é o pip?**
+
+O **pip** (*Pip Installs Packages*) é o **gerenciador de pacotes padrão** para Python. Ele permite:
+
+-   Instalar, atualizar e remover bibliotecas (pacotes) de terceiros.
+
+-   Gerenciar dependências de projetos Python.
+
+-   Baixar pacotes do **PyPI** (*Python Package Index*), o repositório oficial de bibliotecas Python.
+
+#### **2. Como instalar pacotes com pip install**
+
+-   **Sintaxe básica** (no terminal/CMD):
+
+    bash
+
+    ```         
+    pip install nome_do_pacote
+    ```
+
+-   **Exemplos**:
+
+    bash
+
+    ```         
+    pip install pandas       # Instala a biblioteca Pandas pip install numpy==1.21.0  # Instala uma versão específica do NumPy pip install --upgrade requests  # Atualiza a biblioteca Requests
+    ```
+
+<!-- -->
+
+-   **Instalar múltiplos pacotes** (via arquivo **`requirements.txt`**):
+
+    bash
+
+    ```         
+    pip install -r requirements.txt
+    ```
+
+#### **3. Exemplos de Bibliotecas Populares**
+
+| **Biblioteca** | **Função Principal** | **Exemplo de Uso** |
+|:---|:---|:---|
+| **Pandas** | Manipulação e análise de dados (DataFrames). | **`import pandas as pd`** |
+| **NumPy** | Computação numérica com arrays multidimensionais. | **`import numpy as np`** |
+| **Matplotlib** | Criação de gráficos e visualizações. | **`import matplotlib.pyplot as plt`** |
+| **Requests** | Envio de requisições HTTP para APIs. | **`import requests`** |
+
+### **Conceitos Iniciais de Python**
+
+#### **1. Tipos de Dados Básicos**
+
+Python possui tipos de dados primários para representar diferentes valores:
+
+| **Tipo**  | **Descrição**                        | **Exemplo**       |
+|:----------|:-------------------------------------|:------------------|
+| **int**   | Números inteiros                     | **idade = 25**    |
+| **float** | Números decimais                     | **altura = 1.75** |
+| **str**   | Texto (cadeia de caracteres)         | **nome = "Ana"**  |
+| **bool**  | Valores lógicos (**True**/**False**) | **ativo = True**  |
