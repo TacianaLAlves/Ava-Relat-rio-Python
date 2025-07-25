@@ -18,9 +18,8 @@ format:
 execute:
   warning: false
   message: false
-reference-location: margin
-citation-location: margin
 bibliography: Referencia.bib
+nocite: "@*"
 self-contained-math: true
 embed-resources: true
 ---
@@ -219,7 +218,7 @@ python
 
 -   **Parâmetros**: Podem ter valores padrão (**def soma(a, b=1)**).
 
--   **Retorno**: **`return`** envia o resultado (se omitido, retorna **None**).
+-   **Retorno**: **return** envia o resultado (se omitido, retorna **None**).
 
 #### **6. Importação de Bibliotecas**
 
@@ -269,6 +268,4 @@ Dominar essas ferramentas e conceitos é um passo importante para qualquer desen
 
 Em resumo, Git, pip e Python formam um ecossistema poderoso para desenvolvimento de software, e seu domínio abre portas para a criação de soluções robustas e inovadoras.
 
-::: {#refs}
-\`\`\`{=latex} \nocite{*} \printbibliography[title={Referências}]:::
-:::
+### Referências
