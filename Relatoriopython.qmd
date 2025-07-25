@@ -119,7 +119,7 @@ O pip (*Pip Installs Packages*) é o gerenciador de pacotes padrão para Python 
 
 <!-- -->
 
--   **Instalar múltiplos pacotes** (via arquivo **requirements.txt**):
+-   **Instalar múltiplos pacotes** (via arquivo requirements.txt):
 
     bash
 
@@ -166,23 +166,23 @@ Python possui tipos de dados primários para representar diferentes valores : @p
 
 -   **Operadores**:
 
-    -   Aritméticos: **+**, **-**, **\***, **/**, **//** (divisão inteira), **\*\*** (potência).
+    -   Aritméticos: +, -, \*, /, // (divisão inteira), \*\* (potência).
 
-    -   Comparação: **==**, **!=**, **\>**, **\<**, **\>=**, **\<=**.
+    -   Comparação: ==, !=, \>, \<, \>=, \<=.
 
-    -   Lógicos: **and**, **or**, **not**.
+    -   Lógicos: and, or, not.
 
     #### **3. Estruturas de Dados**
 
-    +-----------------+------------------------------------------------------+----------------------------------------------+
-    | **Estrutura**   | **Características**                                  | **Exemplo**                                  |
-    +:================+:=====================================================+:=============================================+
-    | **Listas**      | Mutáveis, ordenadas, colchetes **\[\]**              | **frutas = \["maçã", "banana"\]**            |
-    +-----------------+------------------------------------------------------+----------------------------------------------+
-    | **Tuplas**      | Imutáveis, parênteses **()**                         | **coordenadas = (10, 20)**                   |
-    +-----------------+------------------------------------------------------+----------------------------------------------+
-    | **Dicionários** | Pares **chave: valor**, chaves únicas, chaves **{}** | **pessoa = {"nome": "Carlos", "idade": 30}** |
-    +-----------------+------------------------------------------------------+----------------------------------------------+
+    +---------------+--------------------------------------------------+------------------------------------------+
+    | **Estrutura** | **Características**                              | **Exemplo**                              |
+    +:==============+:=================================================+:=========================================+
+    | Listas        | Mutáveis, ordenadas, colchetes **\[\]**          | frutas = \["maçã", "banana"\]            |
+    +---------------+--------------------------------------------------+------------------------------------------+
+    | Tuplas        | Imutáveis, parênteses **()**                     | coordenadas = (10, 20)                   |
+    +---------------+--------------------------------------------------+------------------------------------------+
+    | Dicionários   | Pares chave: valor, chaves únicas, chaves **{}** | pessoa = {"nome": "Carlos", "idade": 30} |
+    +---------------+--------------------------------------------------+------------------------------------------+
 
 #### **4. Estruturas de Controle**
 
@@ -215,9 +215,9 @@ python
     def saudacao(nome):       return f"Olá, {nome}!"    mensagem = saudacao("Maria")  # Chama a função  
     ```
 
--   **Parâmetros**: Podem ter valores padrão (**def soma(a, b=1)**).
+-   **Parâmetros**: Podem ter valores padrão (def soma(a, b=1)).
 
--   **Retorno**: **return** envia o resultado (se omitido, retorna **None**).
+-   **Retorno**: **return** envia o resultado (se omitido, retorna None).
 
 #### **6. Importação de Bibliotecas**
 
@@ -243,9 +243,9 @@ python
 
 -   **Nomes de variáveis**:
 
-    -   Claros e descritivos (**idade** em vez de **x**).
+    -   Claros e descritivos (idade em vez de x).
 
-    -   Snake_case: **nome_completo**.
+    -   Snake_case: nome_completo.
 
 -   **Indentação**: Blocos são definidos por espaços (4 por nível).
 
