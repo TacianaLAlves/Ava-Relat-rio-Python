@@ -269,4 +269,6 @@ Dominar essas ferramentas e conceitos é um passo importante para qualquer desen
 
 Em resumo, Git, pip e Python formam um ecossistema poderoso para desenvolvimento de software, e seu domínio abre portas para a criação de soluções robustas e inovadoras.
 
-### Referências
+::: {#refs}
+\`\`\`{=latex} \nocite{*} \printbibliography[title={Referências}]:::
+:::
