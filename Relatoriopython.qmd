@@ -19,7 +19,6 @@ execute:
   warning: false
   message: false
 bibliography: Referencia.bib
-nocite: "@*"
 self-contained-math: true
 embed-resources: true
 ---
@@ -34,7 +33,7 @@ embed-resources: true
 
 #### **2. Para que servem?**
 
--   **Git**: é um sistema de controle de versão que acompanha as alterações nos arquivos de forma inteligente. O Git é particularmente útil quando você e um grupo de pessoas fazem alterações nos mesmos arquivos ao mesmo tempo.
+-   **Git**: é um sistema de controle de versão que acompanha as alterações nos arquivos de forma inteligente. O Git é particularmente útil quando você e um grupo de pessoas fazem alterações nos mesmos arquivos ao mesmo tempo @git_pro.
 
     Normalmente, para fazer isso em um fluxo de trabalho baseado no Git, você deve:
 
@@ -44,7 +43,7 @@ embed-resources: true
 
     -   Permite reverter para versões anteriores em caso de erros.
 
--   **GitHub**: O GitHub é uma plataforma baseada em nuvem em que é possível armazenar, compartilhar e trabalhar com outras pessoas para escrever códigos.
+-   **GitHub**: O GitHub é uma plataforma baseada em nuvem em que é possível armazenar, compartilhar e trabalhar com outras pessoas para escrever códigos @github_docs .
 
     O seguinte é possível ao armazenar códigos em um "repositório" no GitHub:
 
@@ -92,7 +91,7 @@ embed-resources: true
 
 #### **1. O que é o pip?**
 
-O pip (*Pip Installs Packages*) é o gerenciador de pacotes padrão para Python. Ele permite:
+O pip (*Pip Installs Packages*) é o gerenciador de pacotes padrão para Python @python_beginners . Ele permite:
 
 -   Instalar, atualizar e remover bibliotecas (pacotes) de terceiros.
 
@@ -146,7 +145,7 @@ O pip (*Pip Installs Packages*) é o gerenciador de pacotes padrão para Python.
 
 #### **1. Tipos de Dados Básicos**
 
-Python possui tipos de dados primários para representar diferentes valores:
+Python possui tipos de dados primários para representar diferentes valores : @python_iluminado
 
 | **Tipo** | **Descrição**                | **Exemplo**   |
 |:---------|:-----------------------------|:--------------|
@@ -268,4 +267,4 @@ Dominar essas ferramentas e conceitos é um passo importante para qualquer desen
 
 Em resumo, Git, pip e Python formam um ecossistema poderoso para desenvolvimento de software, e seu domínio abre portas para a criação de soluções robustas e inovadoras.
 
-### Referências
+### Referências {#refs}
